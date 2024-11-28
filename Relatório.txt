@@ -1,11 +1,27 @@
 Estruturas de dados
 
-  Nesse projeto, o TAD CONJUNTO foi implementado a partir de dois TADs diferentes, estando a critério do usuário qual deles empregar. Visando minimizar a complexidade computacional, as estruturas de dados escolhidas foram as árvores AVL e Rubro-Negra, ambas árvores binárias de busca balanceadas.
-  A estrutura de árvore é vantajosa na implementação do TAD devido à sua eficiência em operações de busca, inserção e remoção de elementos. Estas, por sua vez, são essenciais para operações envolvendo conjuntos, a exemplo de consultas e modificações, como união, interseção e diferença. 
-  Em particular, estruturas balanceadas garantem a preservação da eficiência das operações de busca, inserção e remoção, que ocorrem em tempo O(log(n)). Isso porque, em diversos cenários, árvores binárias simples podem degenerar para uma lista ligada, o que degradaria esse tempo para O(n).
-  Nas árvores AVL (Adelson-Velsky and Landis), a diferença máxima de altura entre as subárvores esquerda e direita de um nó é de, no máximo, 1. Devido a esse balanceamento quase perfeito, a operação de busca fica ligeiramente mais veloz. Por outro lado, alterações como inserções e remoções ficam mais custosas, uma vez que, frequentemente, são necessárias reestruturações e rotações na árvore para manter o balanceamento estrito após essas operações.
-  Nesse sentido, as árvores Rubro-Negras permitem um balanceamento mais flexível quando comparadas às AVL, de modo que a altura das árvores possa diferir por um fator maior (até o dobro). Assim, inserções e remoções costumam ser mais velozes, já que há menor necessidade de rebalancear a árvore. Além disso, apesar de a busca ser marginalmente mais lenta que em AVL, ainda opera em O(log(n)), sendo eficiente para amaioria das aplicações.
-  Para o TAD de conjunto, as operações de inserção e remoção são tão importantes quanto a busca, pois frequentemente são executadas múltiplas vezes durante as operações que manipulam conjuntos, como união, interseção e diferença. A árvore Rubro-Negra foi escolhida como estrutura subjacente devido ao seu melhor desempenho médio para inserções e remoções, tornando-a mais eficiente para as operações de conjunto. Embora a AVL tenha uma leve vantagem em buscas isoladas, a menor sobrecarga de balanceamento da Rubro-Negra torna-a ideal para um conjunto onde todas as operações precisam ser equilibradas em termos de custo.
+    Nesse projeto, o TAD CONJUNTO foi implementado a partir de dois TADs diferentes, estando a critério do usuário qual deles
+empregar. Visando minimizar a complexidade computacional, as estruturas de dados escolhidas foram as árvores AVL e Rubro-Negra, 
+ambas árvores binárias de busca balanceadas.
+    A estrutura de árvore é vantajosa na implementação do TAD devido à sua eficiência em operações de busca, inserção e remoção
+de elementos. Estas, por sua vez, são essenciais para operações envolvendo conjuntos, a exemplo de consultas e modificações,
+como união, interseção e diferença. 
+    Em particular, estruturas balanceadas garantem a preservação da eficiência das operações de busca, inserção e remoção, que
+ocorrem em tempo O(log(n)). Isso porque, em diversos cenários, árvores binárias simples podem degenerar para uma lista ligada,
+o que degradaria esse tempo para O(n).
+    Nas árvores AVL (Adelson-Velsky and Landis), a diferença máxima de altura entre as subárvores esquerda e direita de um nó é 
+de, no máximo, 1. Devido a esse balanceamento quase perfeito, a operação de busca fica ligeiramente mais veloz. Por outro lado,
+alterações como inserções e remoções ficam mais custosas, uma vez que, frequentemente, são necessárias reestruturações e 
+rotações na árvore para manter o balanceamento estrito após essas operações.
+    Nesse sentido, as árvores Rubro-Negras permitem um balanceamento mais flexível quando comparadas às AVL, de modo que a altura
+das árvores possa diferir por um fator maior (até o dobro). Assim, inserções e remoções costumam ser mais velozes, já que há 
+menor necessidade de rebalancear a árvore. Além disso, apesar de a busca ser marginalmente mais lenta que em AVL, ainda opera 
+em O(log(n)), sendo eficiente para a maioria das aplicações.
+    Para o TAD de conjunto, as operações de inserção e remoção são tão importantes quanto a busca, pois frequentemente são 
+executadas múltiplas vezes durante as operações que manipulam conjuntos, como união, interseção e diferença. A árvore Rubro-Negra 
+foi escolhida como estrutura subjacente devido ao seu melhor desempenho médio para inserções e remoções, tornando-a mais eficiente 
+para as operações de conjunto. Embora a AVL tenha uma leve vantagem em buscas isoladas, a menor sobrecarga de balanceamento da 
+Rubro-Negra torna-a ideal para um conjunto onde todas as operações precisam ser equilibradas em termos de custo.
 
 Complexidade Computacional
 
