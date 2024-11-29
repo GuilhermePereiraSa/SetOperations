@@ -25,4 +25,24 @@ Rubro-Negra torna-a ideal para um conjunto onde todas as operações precisam se
 
 Complexidade Computacional
 
+Árvore AVL
+-Criar conjunto:
+-Apagar conjunto:
+-Inserir elemento:
+-Remover elemento:
+-Imprimir conjunto:
+-Pertence:
+-União:
+-Intersecção:
+
+Árvore Rubro-Negra
+-Criar conjunto:
+-Apagar conjunto:
+-Inserir elemento:
+-Remover elemento:
+-Imprimir conjunto:
+-Pertence:
+-União:
+-Intersecção:
+
 
