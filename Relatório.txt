@@ -29,18 +29,24 @@ Complexidade Computacional
     Não há loops nem operações recursivas. Assim, a complexidade computacional é O(1). 
 
 -Apagar conjunto (set_apagar)
-    Em ambas as árvores, uma função recursiva irá ser chamada uma única vez para cada um dos n nós. Portanto, a complexidade será
-de O(n).
+    Em ambas as árvores, uma função recursiva irá ser chamada uma única vez para cada um dos n nós, liberando seu espaço. Portanto, 
+a complexidade será de O(n).
 
 -Inserir elemento (set_inserir)
     Para a árvore AVL, o algoritmo percorre a árvore até encontrar a posição de inserção, operação que no pior caso terá complexidade
-O(log(n)), derivado da própria altura da árvore. Após inserir o nó, pode ser necessário rebalancear a árvore após a inserção, o que 
-pode levar até O(log(n)). Com isso, a complexidade final é dada por O(log(n)) + O(log(n)) = O(2*log(n)) = O(log(n)).
-    Já para a árvore Rubro-Negra, a altura pode ser de até 2*log(n), de modo que 
+O(log n), derivado da própria altura da árvore. Após inserir o nó, pode ser necessário rebalancear a árvore após a inserção, o que 
+pode levar até O(log n) rotações. Com isso, a complexidade final é dada por O(log n).
+    Já para a árvore Rubro-Negra, a busca pelo local de inserção também tem complexidade O(log n). Além disso, são necessários no 
+máximo 2 rotações e O(log n) recolorações, de modo que a complexidade final também é O(log n). Ainda assim, recolorações são muito 
+mais rápidas do que rotações, tornando a Rubro-Negra mais eficiente nessa operação.
 
 -Remover elemento
-    
+
+
 -Imprimir conjunto
+    Para a impressão, uma função recursiva passa por cada nó da árvore uma única vez e imprime na tela o valor armazenado. Então, a 
+complexidade final é de O(n).
+
 -Pertence
 -União
 -Intersecção
