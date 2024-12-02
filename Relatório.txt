@@ -34,22 +34,32 @@ a complexidade será de O(n).
 
 -Inserir elemento (set_inserir)
     Para a árvore AVL, o algoritmo percorre a árvore até encontrar a posição de inserção, operação que no pior caso terá complexidade
-O(log n), derivado da própria altura da árvore. Após inserir o nó, pode ser necessário rebalancear a árvore após a inserção, o que 
-pode levar até O(log n) rotações. Com isso, a complexidade final é dada por O(log n).
-    Já para a árvore Rubro-Negra, a busca pelo local de inserção também tem complexidade O(log n). Além disso, são necessários no 
-máximo 2 rotações e O(log n) recolorações, de modo que a complexidade final também é O(log n). Ainda assim, recolorações são muito 
+O(log2 n), derivado da própria altura da árvore. Após inserir o nó, pode ser necessário rebalancear a árvore após a inserção, o que 
+pode levar até O(log2 n) rotações. Com isso, a complexidade final é dada por O(log2 n).
+    Já para a árvore Rubro-Negra, a busca pelo local de inserção também tem complexidade O(log2 n). Além disso, são necessários no 
+máximo 2 rotações e O(log2 n) recolorações, de modo que a complexidade final também é O(log2 n). Ainda assim, recolorações são muito 
 mais rápidas do que rotações, tornando a Rubro-Negra mais eficiente nessa operação.
 
 -Remover elemento
-
+    De forma similar, a remoção exige a busca do elemento a ser removido e, caso necessário, rebalanceamento após a remoção (rotações 
+e/ou recolorações). Assim, a complexidade da operação também é de O(log2 n).
 
 -Imprimir conjunto
     Para a impressão, uma função recursiva passa por cada nó da árvore uma única vez e imprime na tela o valor armazenado. Então, a 
 complexidade final é de O(n).
 
 -Pertence
+    A operação percorre a árvore buscando determinada chave. Para a árvore AVL, a complexidade é de O(1,44*log2 n) = O(log2 n), já 
+para a Rubro-Negra, O(2*log2 n) = O(log2 n).
+
 -União
+    Para 2 conjuntos com m e n elementos, uma função recursiva percorre cada conjunto in-order (O(m) e O(n)) e insere elementos únicos
+em um conjunto temporário. Em cada recursão, é avaliado se o elemento já pertence ao conjunto temporário e, caso não pertença, a 
+inserção no conjunto tem complexidade O(log2 m) e O(log2 (m + n)). Com isso, a complexidade final é O(m*log2 m) + O(n*log2 (m + n)).
+
 -Intersecção
+    Para 2 conjuntos com m e n elementos, o primeiro conjunto é percorrido in-order de maneira similar à anterior. Para cada um dos m
+elementos, é feito uma busca no segundo conjunto, de modo que a complexidade da operação é O(m*log2 n).
 
-
+    
 
